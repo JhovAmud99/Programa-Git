@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Prototipo web de red social - proyecto académico SENA ADSO">
+    <title>Red Social | Mensajes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <nav class="navbar"><a class="brand" href="inicio.html"><img src="img/logo.svg" alt="Logo"><span>Red
+                Social</span></a>
+        <div class="nav-links"><a class="" href="inicio.html">🏠 Inicio</a><a class="" href="perfil.html">👤
+                Perfil</a><a class="active" href="mensajes.html">💬 Mensajes</a><a class=""
+                href="notificaciones.html">🔔 Notificaciones<span id="notifBadge" class="badge">2</span></a><a
+                class="logout" href="index.html">Salir</a></div>
+    </nav>
+    <main class="container">
+        <div class="message-layout">
+            <aside class="card">
+                <h1 class="section-title">Conversaciones</h1><input class="search" type="search"
+                    placeholder="Buscar conversación" aria-label="Buscar conversación">
+                <ul class="list conversation-list" style="margin-top:12px">
+                    <li data-name="Andrea Martínez"><strong>Andrea Martínez</strong><br><span class="muted">¡Hola! ¿Cómo
+                            estás?</span></li>
+                    <li data-name="Carlos Ramírez"><strong>Carlos Ramírez</strong><br><span class="muted">Nos vemos
+                            mañana.</span></li>
+                    <li data-name="Laura Pérez"><strong>Laura Pérez</strong><br><span class="muted">Te envié el
+                            archivo.</span></li>
+                </ul>
+            </aside>
+            <section class="card conversation">
+                <header class="conversation-header">
+                    <h2>Andrea Martínez</h2><span class="muted">En línea</span>
+                </header>
+                <div id="messages" class="messages">
+                    <div class="bubble received">¡Hola! ¿Cómo estás?</div>
+                    <div class="bubble sent">¡Hola! Muy bien, gracias. Estoy trabajando en el proyecto.</div>
+                    <div class="bubble received">¡Excelente! La interfaz va quedando muy bien.</div>
+                </div>
+                <form id="messageForm" class="message-form"><input id="messageInput" autocomplete="off"
+                        placeholder="Escribe un mensaje..." required><button class="btn btn-primary"
+                        type="submit">Enviar</button></form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">Mensajería · Demostración sin servidor</footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

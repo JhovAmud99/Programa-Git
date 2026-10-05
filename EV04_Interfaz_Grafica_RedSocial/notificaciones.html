@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Prototipo web de red social - proyecto académico SENA ADSO">
+    <title>Red Social | Notificaciones</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <nav class="navbar"><a class="brand" href="inicio.html"><img src="img/logo.svg" alt="Logo"><span>Red
+                Social</span></a>
+        <div class="nav-links"><a class="" href="inicio.html">🏠 Inicio</a><a class="" href="perfil.html">👤
+                Perfil</a><a class="" href="mensajes.html">💬 Mensajes</a><a class="active"
+                href="notificaciones.html">🔔 Notificaciones<span id="notifBadge" class="badge">2</span></a><a
+                class="logout" href="index.html">Salir</a></div>
+    </nav>
+    <main class="container">
+        <section class="card">
+            <div style="display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap">
+                <h1 class="section-title">Notificaciones</h1><button id="markReadBtn" class="btn btn-light">Marcar todas
+                    como leídas</button>
+            </div>
+            <ul class="list">
+                <li class="notification unread"><span class="notification-icon">♥</span>
+                    <div><strong>Andrea Martínez</strong> indicó que le gusta tu publicación.<br><time>Hace 5
+                            minutos</time></div>
+                </li>
+                <li class="notification unread"><span class="notification-icon">👤</span>
+                    <div><strong>Carlos Ramírez</strong> comenzó a seguirte.<br><time>Hace 30 minutos</time></div>
+                </li>
+                <li class="notification"><span class="notification-icon">💬</span>
+                    <div><strong>Laura Pérez</strong> te envió un mensaje.<br><time>Ayer</time></div>
+                </li>
+                <li class="notification"><span class="notification-icon">🔔</span>
+                    <div>Tienes nuevas sugerencias de personas que quizá conozcas.<br><time>Hace 2 días</time></div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">Centro de notificaciones · Interfaz frontend</footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

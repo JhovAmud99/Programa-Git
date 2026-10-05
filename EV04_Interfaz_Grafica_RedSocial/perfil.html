@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Prototipo web de red social - proyecto académico SENA ADSO">
+    <title>Red Social | Perfil</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <nav class="navbar"><a class="brand" href="inicio.html"><img src="img/logo.svg" alt="Logo"><span>Red
+                Social</span></a>
+        <div class="nav-links"><a class="" href="inicio.html">🏠 Inicio</a><a class="active" href="perfil.html">👤
+                Perfil</a><a class="" href="mensajes.html">💬 Mensajes</a><a class="" href="notificaciones.html">🔔
+                Notificaciones<span id="notifBadge" class="badge">2</span></a><a class="logout"
+                href="index.html">Salir</a></div>
+    </nav>
+    <main class="container">
+        <section class="card profile-card">
+            <div class="cover"></div>
+            <div class="profile-content">
+                <div class="avatar">JD</div>
+                <h1>Jhovan D. Cordoba</h1>
+                <p class="muted">Desarrollador de software en formación</p>
+                <p style="margin-top:12px">Perfil de demostración para el proyecto de red social. Aquí se presenta la
+                    información básica del usuario y sus accesos principales.</p>
+                <div class="profile-actions"><button id="editProfileBtn" class="btn btn-primary">Editar
+                        perfil</button><a class="btn btn-light" href="mensajes.html">Enviar mensaje</a></div>
+                <div class="stats">
+                    <div class="stat"><strong>24</strong><span class="muted">Publicaciones</span></div>
+                    <div class="stat"><strong>138</strong><span class="muted">Amigos</span></div>
+                    <div class="stat"><strong>56</strong><span class="muted">Seguidores</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="card bio-card">
+            <h2 class="section-title">Acerca de mí</h2>
+            <ul class="list">
+                <li>🎓 Formación: ADSO - SENA</li>
+                <li>💻 Intereses: desarrollo web y software</li>
+                <li>📍 Proyecto: red social </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">Perfil de usuario · Interfaz frontend</footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
